@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "lSubTitle": {
+      "type": "string"
+    },
+    "rSubTitle": {
+      "type": "string"
+    },
+    "Form": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.form"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Map": {
+      "type": "customField",
+      "customField": "plugin::google-maps.location-picker"
+    }
+  }
+}

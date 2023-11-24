@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_elements_forms",
+  "info": {
+    "displayName": "Form",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phone": {
+      "type": "biginteger"
+    },
+    "Subject": {
+      "type": "string"
+    },
+    "Message": {
+      "type": "text"
+    },
+    "Submit": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "lSubTitle": {
+      "type": "string"
+    },
+    "rSubTitle": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "text"
+    }
+  }
+}

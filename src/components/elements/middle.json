@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_middles",
+  "info": {
+    "displayName": "middle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bottom_title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

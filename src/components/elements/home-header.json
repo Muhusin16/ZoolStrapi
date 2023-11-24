@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_home_headers",
+  "info": {
+    "displayName": "homeHeader"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "home": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

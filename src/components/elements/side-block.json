@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_side_blocks",
+  "info": {
+    "displayName": "side_block"
+  },
+  "options": {},
+  "attributes": {
+    "img_url": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

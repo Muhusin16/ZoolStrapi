@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testings",
+  "info": {
+    "singularName": "testing",
+    "pluralName": "testings",
+    "displayName": "Testing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "rSubTitle": {
+      "type": "blocks"
+    },
+    "description": {
+      "type": "json"
+    },
+    "subTitle": {
+      "type": "biginteger"
+    },
+    "lSubTitle": {
+      "type": "email"
+    }
+  }
+}

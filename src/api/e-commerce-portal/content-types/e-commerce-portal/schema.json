@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "e_commerce_portals",
+  "info": {
+    "singularName": "e-commerce-portal",
+    "pluralName": "e-commerce-portals",
+    "displayName": "eCommerce-portal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Portals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.i-card"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "MiddleBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.ecommerce-middle-block"
+    }
+  }
+}

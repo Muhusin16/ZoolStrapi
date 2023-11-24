@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.services"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "Desc": {
+      "type": "text"
+    }
+  }
+}

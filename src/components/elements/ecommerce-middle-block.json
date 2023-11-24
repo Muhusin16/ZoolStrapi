@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_elements_ecommerce_middle_blocks",
+  "info": {
+    "displayName": "ecommerce-middle-block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "lDesc": {
+      "type": "text"
+    },
+    "rDesc": {
+      "type": "text"
+    },
+    "lSubTitle": {
+      "type": "string"
+    },
+    "rSubTitle": {
+      "type": "string"
+    }
+  }
+}

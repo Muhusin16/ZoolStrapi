@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_headings",
+  "info": {
+    "displayName": "Heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "MiddleBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.middle"
+    },
+    "SideBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.side-block"
+    },
+    "Gallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.gallary"
+    },
+    "Header": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.home-header"
+    }
+  }
+}

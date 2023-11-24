@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "leftDesc": {
+      "type": "text"
+    },
+    "rightDesc": {
+      "type": "text"
+    },
+    "lSubTitle": {
+      "type": "string"
+    },
+    "Profile": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.i-card"
+    }
+  }
+}
