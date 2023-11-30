@@ -11,7 +11,7 @@
       "repeatable": true,
       "component": "elements.services"
     },
-    "subTitle": {
+    "Title": {
       "type": "string"
     },
     "Desc": {

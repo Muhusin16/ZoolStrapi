@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_elements_web_product_middle_blocks",
+  "info": {
+    "displayName": "webProduct-middle-block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "lDesc": {
+      "type": "text"
+    },
+    "rDesc": {
+      "type": "text"
+    },
+    "lSubTitle": {
+      "type": "string"
+    },
+    "rSubTitle": {
+      "type": "string"
+    }
+  }
+}

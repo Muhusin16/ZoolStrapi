@@ -12,25 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "MiddleBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.web-product-middle-block"
     },
-    "leftDesc": {
-      "type": "text"
-    },
-    "rightDesc": {
-      "type": "text"
-    },
-    "rSubTitle": {
-      "type": "string"
-    },
-    "lSubTitle": {
-      "type": "string"
-    },
-    "Card": {
+    "Portals": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.i-card"
+      "component": "elements.portals"
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.footer"
+    },
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.header"
     }
   }
 }

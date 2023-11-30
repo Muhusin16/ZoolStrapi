@@ -8,6 +8,9 @@
   "attributes": {
     "Content": {
       "type": "json"
+    },
+    "content_title": {
+      "type": "string"
     }
   }
 }

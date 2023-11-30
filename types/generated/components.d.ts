@@ -34,7 +34,7 @@ export interface ElementsFooter extends Schema.Component {
   };
   attributes: {
     Heading: Attribute.Component<'elements.services', true>;
-    subTitle: Attribute.String;
+    Title: Attribute.String;
     Desc: Attribute.Text;
   };
 }
@@ -75,6 +75,7 @@ export interface ElementsHeader extends Schema.Component {
   collectionName: 'components_elements_headers';
   info: {
     displayName: 'Header';
+    description: '';
   };
   attributes: {
     header: Attribute.Component<'elements.services', true>;
@@ -123,6 +124,21 @@ export interface ElementsICard extends Schema.Component {
   };
 }
 
+export interface ElementsMiddleBlock extends Schema.Component {
+  collectionName: 'components_elements_middle_blocks';
+  info: {
+    displayName: 'MiddleBlock';
+    description: '';
+  };
+  attributes: {
+    Title: Attribute.String;
+    lDesc: Attribute.Text;
+    rDesc: Attribute.Text;
+    lSubTitle: Attribute.String;
+    rSubTitle: Attribute.String;
+  };
+}
+
 export interface ElementsMiddle extends Schema.Component {
   collectionName: 'components_elements_middles';
   info: {
@@ -136,6 +152,30 @@ export interface ElementsMiddle extends Schema.Component {
   };
 }
 
+export interface ElementsNavbar extends Schema.Component {
+  collectionName: 'components_elements_navbars';
+  info: {
+    displayName: 'Navbar';
+  };
+  attributes: {
+    Title: Attribute.String;
+    content: Attribute.JSON;
+  };
+}
+
+export interface ElementsPortals extends Schema.Component {
+  collectionName: 'components_elements_portals';
+  info: {
+    displayName: 'Portals';
+    description: '';
+  };
+  attributes: {
+    image: Attribute.Media;
+    Title: Attribute.String;
+    description: Attribute.Text;
+  };
+}
+
 export interface ElementsServices extends Schema.Component {
   collectionName: 'components_elements_services';
   info: {
@@ -144,6 +184,7 @@ export interface ElementsServices extends Schema.Component {
   };
   attributes: {
     Content: Attribute.JSON;
+    content_title: Attribute.String;
   };
 }
 
@@ -170,6 +211,21 @@ export interface ElementsTopBlock extends Schema.Component {
   };
 }
 
+export interface ElementsWebProductMiddleBlock extends Schema.Component {
+  collectionName: 'components_elements_web_product_middle_blocks';
+  info: {
+    displayName: 'webProduct-middle-block';
+    description: '';
+  };
+  attributes: {
+    Title: Attribute.String;
+    lDesc: Attribute.Text;
+    rDesc: Attribute.Text;
+    lSubTitle: Attribute.String;
+    rSubTitle: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -182,10 +238,14 @@ declare module '@strapi/types' {
       'elements.heading': ElementsHeading;
       'elements.home-header': ElementsHomeHeader;
       'elements.i-card': ElementsICard;
+      'elements.middle-block': ElementsMiddleBlock;
       'elements.middle': ElementsMiddle;
+      'elements.navbar': ElementsNavbar;
+      'elements.portals': ElementsPortals;
       'elements.services': ElementsServices;
       'elements.side-block': ElementsSideBlock;
       'elements.top-block': ElementsTopBlock;
+      'elements.web-product-middle-block': ElementsWebProductMiddleBlock;
     }
   }
 }

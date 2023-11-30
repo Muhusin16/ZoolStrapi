@@ -4,32 +4,28 @@
   "info": {
     "singularName": "cloud-solution",
     "pluralName": "cloud-solutions",
-    "displayName": "Cloud-Solution"
+    "displayName": "Cloud-Solution",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.header"
     },
-    "leftDesc": {
-      "type": "text"
-    },
-    "rightDesc": {
-      "type": "text"
-    },
-    "rSubTitle": {
-      "type": "string"
-    },
-    "lSubTitle": {
-      "type": "string"
-    },
-    "Card": {
+    "Portals": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.i-card"
+      "component": "elements.portals"
+    },
+    "MiddleBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.middle-block"
     }
   }
 }

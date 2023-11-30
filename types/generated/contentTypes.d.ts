@@ -877,17 +877,15 @@ export interface ApiCloudSolutionCloudSolution extends Schema.CollectionType {
     singularName: 'cloud-solution';
     pluralName: 'cloud-solutions';
     displayName: 'Cloud-Solution';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    leftDesc: Attribute.Text;
-    rightDesc: Attribute.Text;
-    rSubTitle: Attribute.String;
-    lSubTitle: Attribute.String;
-    Card: Attribute.Component<'elements.i-card', true>;
+    Header: Attribute.Component<'elements.header'>;
+    Portals: Attribute.Component<'elements.portals', true>;
+    MiddleBlock: Attribute.Component<'elements.middle-block'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1028,6 +1026,8 @@ export interface ApiECommercePortalECommercePortal
     Portals: Attribute.Component<'elements.i-card', true>;
     images: Attribute.Media;
     MiddleBlock: Attribute.Component<'elements.ecommerce-middle-block'>;
+    Header: Attribute.Component<'elements.header'>;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1180,17 +1180,15 @@ export interface ApiMobileAppMobileApp extends Schema.CollectionType {
     singularName: 'mobile-app';
     pluralName: 'mobile-apps';
     displayName: 'Mobile App';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    leftDesc: Attribute.Text;
-    rSubTitle: Attribute.String;
-    rightDesc: Attribute.Text;
-    lSubTitle: Attribute.String;
-    Card: Attribute.Component<'elements.i-card', true>;
+    Portals: Attribute.Component<'elements.portals', true>;
+    Header: Attribute.Component<'elements.header'>;
+    MiddleBlock: Attribute.Component<'elements.middle-block'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1241,6 +1239,38 @@ export interface ApiMobileHybridDevelopmentMobileHybridDevelopment
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::mobile-hybrid-development.mobile-hybrid-development',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiNavbarNavbar extends Schema.CollectionType {
+  collectionName: 'navbars';
+  info: {
+    singularName: 'navbar';
+    pluralName: 'navbars';
+    displayName: 'Navbar';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Header: Attribute.Component<'elements.navbar', true>;
+    logo: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::navbar.navbar',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::navbar.navbar',
       'oneToOne',
       'admin::user'
     > &
@@ -1362,12 +1392,10 @@ export interface ApiWebProdutWebProdut extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    leftDesc: Attribute.Text;
-    rightDesc: Attribute.Text;
-    rSubTitle: Attribute.String;
-    lSubTitle: Attribute.String;
-    Card: Attribute.Component<'elements.i-card', true>;
+    MiddleBlock: Attribute.Component<'elements.web-product-middle-block'>;
+    Portals: Attribute.Component<'elements.portals', true>;
+    Footer: Attribute.Component<'elements.footer'>;
+    Header: Attribute.Component<'elements.header'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1418,6 +1446,7 @@ declare module '@strapi/types' {
       'api::lab.lab': ApiLabLab;
       'api::mobile-app.mobile-app': ApiMobileAppMobileApp;
       'api::mobile-hybrid-development.mobile-hybrid-development': ApiMobileHybridDevelopmentMobileHybridDevelopment;
+      'api::navbar.navbar': ApiNavbarNavbar;
       'api::partner.partner': ApiPartnerPartner;
       'api::testing.testing': ApiTestingTesting;
       'api::ui-engineering.ui-engineering': ApiUiEngineeringUiEngineering;

@@ -29,6 +29,16 @@
       "type": "component",
       "repeatable": false,
       "component": "elements.ecommerce-middle-block"
+    },
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.header"
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.footer"
     }
   }
 }
