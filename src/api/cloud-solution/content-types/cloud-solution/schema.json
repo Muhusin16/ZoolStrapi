@@ -26,6 +26,11 @@
       "type": "component",
       "repeatable": false,
       "component": "elements.middle-block"
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.footer"
     }
   }
 }

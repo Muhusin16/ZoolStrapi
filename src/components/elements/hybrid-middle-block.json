@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_hybrid_middle_blocks",
+  "info": {
+    "displayName": "Hybrid-MiddleBlock"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "lDesc": {
+      "type": "text"
+    },
+    "rDesc": {
+      "type": "text"
+    },
+    "rSubTitle": {
+      "type": "string"
+    },
+    "lSubTitle": {
+      "type": "string"
+    },
+    "rDesc1": {
+      "type": "text"
+    }
+  }
+}

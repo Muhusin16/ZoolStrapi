@@ -816,11 +816,10 @@ export interface ApiAboutAbout extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    leftDesc: Attribute.Text;
-    rightDesc: Attribute.Text;
-    lSubTitle: Attribute.String;
-    Profile: Attribute.Component<'elements.i-card', true>;
+    Portals: Attribute.Component<'elements.portals', true>;
+    MiddleBlock: Attribute.Component<'elements.middle-block'>;
+    Header: Attribute.Component<'elements.header'>;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -886,6 +885,7 @@ export interface ApiCloudSolutionCloudSolution extends Schema.CollectionType {
     Header: Attribute.Component<'elements.header'>;
     Portals: Attribute.Component<'elements.portals', true>;
     MiddleBlock: Attribute.Component<'elements.middle-block'>;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -980,18 +980,16 @@ export interface ApiDesignDesign extends Schema.CollectionType {
     singularName: 'design';
     pluralName: 'designs';
     displayName: 'Design';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    leftDesc: Attribute.Text;
-    lSubTitle: Attribute.String;
-    leftDesc1: Attribute.Text;
-    rightDesc: Attribute.Text;
-    lSubTitle1: Attribute.String;
-    Card: Attribute.Component<'elements.i-card', true>;
+    Header: Attribute.Component<'elements.header'>;
+    Portals: Attribute.Component<'elements.portals', true>;
+    MiddleBlock: Attribute.Component<'elements.design-middle-block'>;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1157,13 +1155,10 @@ export interface ApiLabLab extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    leftDesc: Attribute.Text;
-    rightDesc: Attribute.Text;
-    Card: Attribute.Component<'elements.i-card', true>;
-    lSubTitle: Attribute.String;
-    rSubTitle: Attribute.String;
-    rdesc: Attribute.Text;
+    MiddleBlock: Attribute.Component<'elements.lab-midddle-block'>;
+    Portals: Attribute.Component<'elements.portals', true>;
+    Header: Attribute.Component<'elements.header'>;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1189,6 +1184,7 @@ export interface ApiMobileAppMobileApp extends Schema.CollectionType {
     Portals: Attribute.Component<'elements.portals', true>;
     Header: Attribute.Component<'elements.header'>;
     MiddleBlock: Attribute.Component<'elements.middle-block'>;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1220,14 +1216,10 @@ export interface ApiMobileHybridDevelopmentMobileHybridDevelopment
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.Text;
-    rightDesc: Attribute.Text;
-    leftDesc: Attribute.Text;
-    rSubTitle: Attribute.String;
-    lSubTitle: Attribute.String;
-    toolImage: Attribute.Component<'elements.card'>;
-    rdesc: Attribute.Text;
-    footerMessage: Attribute.Component<'elements.footer'>;
+    Header: Attribute.Component<'elements.header'>;
+    MiddleBlock: Attribute.Component<'elements.hybrid-middle-block'>;
+    images: Attribute.Media;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

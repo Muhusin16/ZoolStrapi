@@ -11,6 +11,21 @@ export interface ElementsCard extends Schema.Component {
   };
 }
 
+export interface ElementsDesignMiddleBlock extends Schema.Component {
+  collectionName: 'components_elements_design_middle_blocks';
+  info: {
+    displayName: 'Design-MiddleBlock';
+  };
+  attributes: {
+    Title: Attribute.String;
+    lDesc: Attribute.Text;
+    lSubTitle1: Attribute.String;
+    lDesc1: Attribute.Text;
+    rDesc: Attribute.Text;
+    lSubTitle: Attribute.String;
+  };
+}
+
 export interface ElementsEcommerceMiddleBlock extends Schema.Component {
   collectionName: 'components_elements_ecommerce_middle_blocks';
   info: {
@@ -111,6 +126,21 @@ export interface ElementsHomeHeader extends Schema.Component {
   };
 }
 
+export interface ElementsHybridMiddleBlock extends Schema.Component {
+  collectionName: 'components_elements_hybrid_middle_blocks';
+  info: {
+    displayName: 'Hybrid-MiddleBlock';
+  };
+  attributes: {
+    Title: Attribute.String;
+    lDesc: Attribute.Text;
+    rDesc: Attribute.Text;
+    rSubTitle: Attribute.String;
+    lSubTitle: Attribute.String;
+    rDesc1: Attribute.Text;
+  };
+}
+
 export interface ElementsICard extends Schema.Component {
   collectionName: 'components_elements_i_cards';
   info: {
@@ -121,6 +151,22 @@ export interface ElementsICard extends Schema.Component {
     Image: Attribute.Media;
     Title: Attribute.String;
     description: Attribute.Text;
+  };
+}
+
+export interface ElementsLabMidddleBlock extends Schema.Component {
+  collectionName: 'components_elements_lab_midddle_blocks';
+  info: {
+    displayName: 'Lab-MidddleBlock';
+    description: '';
+  };
+  attributes: {
+    Title: Attribute.String;
+    lDesc: Attribute.Text;
+    rDesc: Attribute.Text;
+    rSubTitle: Attribute.String;
+    rDesc1: Attribute.Text;
+    lSubTitle: Attribute.String;
   };
 }
 
@@ -230,6 +276,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'elements.card': ElementsCard;
+      'elements.design-middle-block': ElementsDesignMiddleBlock;
       'elements.ecommerce-middle-block': ElementsEcommerceMiddleBlock;
       'elements.footer': ElementsFooter;
       'elements.form': ElementsForm;
@@ -237,7 +284,9 @@ declare module '@strapi/types' {
       'elements.header': ElementsHeader;
       'elements.heading': ElementsHeading;
       'elements.home-header': ElementsHomeHeader;
+      'elements.hybrid-middle-block': ElementsHybridMiddleBlock;
       'elements.i-card': ElementsICard;
+      'elements.lab-midddle-block': ElementsLabMidddleBlock;
       'elements.middle-block': ElementsMiddleBlock;
       'elements.middle': ElementsMiddle;
       'elements.navbar': ElementsNavbar;

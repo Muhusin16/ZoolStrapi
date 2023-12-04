@@ -12,30 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "text"
-    },
-    "rightDesc": {
-      "type": "text"
-    },
-    "leftDesc": {
-      "type": "text"
-    },
-    "rSubTitle": {
-      "type": "string"
-    },
-    "lSubTitle": {
-      "type": "string"
-    },
-    "toolImage": {
+    "Header": {
       "type": "component",
       "repeatable": false,
-      "component": "elements.card"
+      "component": "elements.header"
     },
-    "rdesc": {
-      "type": "text"
+    "MiddleBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hybrid-middle-block"
     },
-    "footerMessage": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Footer": {
       "type": "component",
       "repeatable": false,
       "component": "elements.footer"

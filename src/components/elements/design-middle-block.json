@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_design_middle_blocks",
+  "info": {
+    "displayName": "Design-MiddleBlock"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "lDesc": {
+      "type": "text"
+    },
+    "lSubTitle1": {
+      "type": "string"
+    },
+    "lDesc1": {
+      "type": "text"
+    },
+    "rDesc": {
+      "type": "text"
+    },
+    "lSubTitle": {
+      "type": "string"
+    }
+  }
+}

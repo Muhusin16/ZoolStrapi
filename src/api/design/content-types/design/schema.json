@@ -4,35 +4,33 @@
   "info": {
     "singularName": "design",
     "pluralName": "designs",
-    "displayName": "Design"
+    "displayName": "Design",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.header"
     },
-    "leftDesc": {
-      "type": "text"
-    },
-    "lSubTitle": {
-      "type": "string"
-    },
-    "leftDesc1": {
-      "type": "text"
-    },
-    "rightDesc": {
-      "type": "text"
-    },
-    "lSubTitle1": {
-      "type": "string"
-    },
-    "Card": {
+    "Portals": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.i-card"
+      "component": "elements.portals"
+    },
+    "MiddleBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.design-middle-block"
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.footer"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elements_lab_midddle_blocks",
+  "info": {
+    "displayName": "Lab-MidddleBlock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "lDesc": {
+      "type": "text"
+    },
+    "rDesc": {
+      "type": "text"
+    },
+    "rSubTitle": {
+      "type": "string"
+    },
+    "rDesc1": {
+      "type": "text"
+    },
+    "lSubTitle": {
+      "type": "string"
+    }
+  }
+}
