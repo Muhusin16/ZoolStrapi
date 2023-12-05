@@ -4,25 +4,36 @@
   "info": {
     "singularName": "client",
     "pluralName": "clients",
-    "displayName": "Client"
+    "displayName": "Client",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.header"
     },
-    "lSubTitle": {
-      "type": "string"
+    "MiddleBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.client-middle-block"
     },
-    "Client_Image": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.footer"
     }
   }
 }

@@ -4,31 +4,36 @@
   "info": {
     "singularName": "ui-engineering",
     "pluralName": "ui-engineerings",
-    "displayName": "UI Engineering"
+    "displayName": "UI Engineering",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.header"
     },
-    "leftDesc": {
-      "type": "text"
+    "MiddleBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.ui-middle-block"
     },
-    "rightDesc": {
-      "type": "text"
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.footer"
     },
-    "lSubTitle": {
-      "type": "string"
-    },
-    "Asssets": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

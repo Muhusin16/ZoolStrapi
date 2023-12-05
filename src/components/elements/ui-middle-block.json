@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_ui_middle_blocks",
+  "info": {
+    "displayName": "UI-MiddleBlock"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "lDesc": {
+      "type": "text"
+    },
+    "rDesc": {
+      "type": "text"
+    },
+    "rDesc1": {
+      "type": "text"
+    },
+    "lSubTitle": {
+      "type": "string"
+    }
+  }
+}

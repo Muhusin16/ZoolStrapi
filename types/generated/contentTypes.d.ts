@@ -844,14 +844,16 @@ export interface ApiClientClient extends Schema.CollectionType {
     singularName: 'client';
     pluralName: 'clients';
     displayName: 'Client';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    lSubTitle: Attribute.String;
-    Client_Image: Attribute.Media;
+    Header: Attribute.Component<'elements.header'>;
+    MiddleBlock: Attribute.Component<'elements.client-middle-block'>;
+    images: Attribute.Media;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1282,10 +1284,10 @@ export interface ApiPartnerPartner extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.Text;
-    description: Attribute.Text;
-    lSubTitle: Attribute.String;
-    card: Attribute.Component<'elements.i-card', true>;
+    Header: Attribute.Component<'elements.header'>;
+    Portals: Attribute.Component<'elements.portals', true>;
+    MiddleBlock: Attribute.Component<'elements.partner-middle-block'>;
+    Footer: Attribute.Component<'elements.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1344,16 +1346,16 @@ export interface ApiUiEngineeringUiEngineering extends Schema.CollectionType {
     singularName: 'ui-engineering';
     pluralName: 'ui-engineerings';
     displayName: 'UI Engineering';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    leftDesc: Attribute.Text;
-    rightDesc: Attribute.Text;
-    lSubTitle: Attribute.String;
-    Asssets: Attribute.Media;
+    Header: Attribute.Component<'elements.header'>;
+    MiddleBlock: Attribute.Component<'elements.ui-middle-block'>;
+    Footer: Attribute.Component<'elements.footer'>;
+    images: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

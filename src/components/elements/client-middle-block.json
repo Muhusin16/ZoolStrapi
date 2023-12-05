@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_client_middle_blocks",
+  "info": {
+    "displayName": "Client-MiddleBlock"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "lSubTitle": {
+      "type": "string"
+    }
+  }
+}

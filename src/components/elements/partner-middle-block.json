@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_elements_partner_middle_blocks",
+  "info": {
+    "displayName": "Partner-MiddleBlock"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "lSubTitle": {
+      "type": "string"
+    }
+  }
+}

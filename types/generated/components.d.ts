@@ -11,6 +11,17 @@ export interface ElementsCard extends Schema.Component {
   };
 }
 
+export interface ElementsClientMiddleBlock extends Schema.Component {
+  collectionName: 'components_elements_client_middle_blocks';
+  info: {
+    displayName: 'Client-MiddleBlock';
+  };
+  attributes: {
+    Title: Attribute.String;
+    lSubTitle: Attribute.String;
+  };
+}
+
 export interface ElementsDesignMiddleBlock extends Schema.Component {
   collectionName: 'components_elements_design_middle_blocks';
   info: {
@@ -209,6 +220,18 @@ export interface ElementsNavbar extends Schema.Component {
   };
 }
 
+export interface ElementsPartnerMiddleBlock extends Schema.Component {
+  collectionName: 'components_elements_partner_middle_blocks';
+  info: {
+    displayName: 'Partner-MiddleBlock';
+  };
+  attributes: {
+    Title: Attribute.String;
+    description: Attribute.Text;
+    lSubTitle: Attribute.String;
+  };
+}
+
 export interface ElementsPortals extends Schema.Component {
   collectionName: 'components_elements_portals';
   info: {
@@ -257,6 +280,20 @@ export interface ElementsTopBlock extends Schema.Component {
   };
 }
 
+export interface ElementsUiMiddleBlock extends Schema.Component {
+  collectionName: 'components_elements_ui_middle_blocks';
+  info: {
+    displayName: 'UI-MiddleBlock';
+  };
+  attributes: {
+    Title: Attribute.String;
+    lDesc: Attribute.Text;
+    rDesc: Attribute.Text;
+    rDesc1: Attribute.Text;
+    lSubTitle: Attribute.String;
+  };
+}
+
 export interface ElementsWebProductMiddleBlock extends Schema.Component {
   collectionName: 'components_elements_web_product_middle_blocks';
   info: {
@@ -276,6 +313,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'elements.card': ElementsCard;
+      'elements.client-middle-block': ElementsClientMiddleBlock;
       'elements.design-middle-block': ElementsDesignMiddleBlock;
       'elements.ecommerce-middle-block': ElementsEcommerceMiddleBlock;
       'elements.footer': ElementsFooter;
@@ -290,10 +328,12 @@ declare module '@strapi/types' {
       'elements.middle-block': ElementsMiddleBlock;
       'elements.middle': ElementsMiddle;
       'elements.navbar': ElementsNavbar;
+      'elements.partner-middle-block': ElementsPartnerMiddleBlock;
       'elements.portals': ElementsPortals;
       'elements.services': ElementsServices;
       'elements.side-block': ElementsSideBlock;
       'elements.top-block': ElementsTopBlock;
+      'elements.ui-middle-block': ElementsUiMiddleBlock;
       'elements.web-product-middle-block': ElementsWebProductMiddleBlock;
     }
   }
